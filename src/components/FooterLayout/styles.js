@@ -12,7 +12,7 @@ export const Footer = styled.footer`
 `
 
 export const FooterStyles = createGlobalStyle`
-  h3 {
+  .Footer-h3 {
     color: #ffffff;
     font-size: 22px;
     font-weight: 700;

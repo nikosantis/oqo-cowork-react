@@ -15,14 +15,14 @@ export const FooterLayout = () => {
               <Logo />
             </Col>
             <Col lg='3'>
-              <h3>Déjanos un mensaje</h3>
+              <h3 className='Footer-h3'>Déjanos un mensaje</h3>
               <Ul unstyled>
                 <Li><a href='tel:+56222456070' target='_blank'>Tel: +56 2 2245 6070</a></Li>
                 <Li><a href='mailto:hola@oqo.cl' target='_blank'>Email: hola@oqo.cl</a></Li>
               </Ul>
             </Col>
             <Col lg='3'>
-              <h3>Explora</h3>
+              <h3 className='Footer-h3'>Explora</h3>
               <Ul unstyled>
                 <Li><a href='https://www.oqo.cl/somos' target='_blank'>Somos</a></Li>
                 <Li><a href='https://www.oqo.cl/proyectos/' target='_blank'>Proyectos</a></Li>
@@ -31,7 +31,7 @@ export const FooterLayout = () => {
               </Ul>
             </Col>
             <Col lg='3'>
-              <h3>Dónde Estamos</h3>
+              <h3 className='Footer-h3'>Dónde Estamos</h3>
               <div className='FooterSocial'>
                 <a href='https://www.facebook.com/oqocl/' target='_blank'>
                   <FaFacebookSquare />

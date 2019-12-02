@@ -7,6 +7,7 @@ const rebootCss = reboot()
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+  @import 'bootstrap/dist/css/bootstrap.min.css'
 
   ${rebootCss}
 

@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Container, Row, Col } from '@bootstrap-styled/v4'
 import { Section, GetInfoStyles } from './styles'
-import { ButtonBlack } from '../Buttons/styles'
+import { ModalGetInfo } from '../ModalLayout'
 
 export const GetInfo = () => {
-  const [show, setShow] = useState(false)
-
   return (
     (
       <>
@@ -16,8 +14,7 @@ export const GetInfo = () => {
                 <GetInfoStyles />
                 <h2>Amplía tu visión de negocio</h2>
                 <p className='GetInfo-p'>Trabaja en un lugar con un gran potencial de colaboración creativa. ¡Te esperamos!</p>
-                <ButtonBlack onClick={() => setShow(!show)}>Recibir Info</ButtonBlack>
-                {show && <div>This text will show!</div>}
+                <ModalGetInfo />
               </Col>
             </Row>
           </Container>
