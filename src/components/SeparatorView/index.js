@@ -2,7 +2,7 @@ import React from 'react'
 import { Section, SeparatorViewGlobalStyles } from './styles'
 import { Container, Row, Col } from '@bootstrap-styled/v4'
 
-const IMG_URL = 'https://res.cloudinary.com/nikosantis/image/upload/v1574883243/cowork-oqo/SeparatorViewImage_alsq9q.jpg'
+const IMG_URL = 'https://res.cloudinary.com/nikosantis/image/upload/v1575408719/cowork-oqo/oqoview_picture_kv4fju.jpg'
 
 export const SeparatorView = () => {
   return (

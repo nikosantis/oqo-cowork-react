@@ -2,7 +2,17 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const FormBox = styled.form`
   background-color: #ffffff;
+`
+
+export const ContainerBox = styled.section`
+  background-color: #ffffff;
   padding: 50px;
+`
+
+export const SuccessBox = styled.div`
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 `
 
 export const FormGlobalStyles = createGlobalStyle`

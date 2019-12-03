@@ -1,8 +1,10 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
+  mode: 'production',
   output: {
     filename: 'app.bundle.js'
   },
@@ -18,7 +20,8 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
-    })
+    }),
+    new Dotenv()
   ],
   module: {
     rules: [
