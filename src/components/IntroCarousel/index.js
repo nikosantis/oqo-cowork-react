@@ -8,7 +8,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css'
 
 const API = 'https://api-cowork-oqo.now.sh/boxicons'
 
-export const IntroCarousel = () => {
+const IntroCarouselComponent = () => {
   const boxIcons = useBoxIconsState(API)
 
   return boxIcons.length === 0 ? <p>Loading</p> : (
@@ -25,6 +25,20 @@ export const IntroCarousel = () => {
             autoplayTimeout={10000}
             smartSpeed={700}
             nav
+            responsive={
+              {
+                0: {
+                  items: 1
+                },
+                768: {
+                  items: 2
+                },
+                1000: {
+                  items: 3
+                }
+              // eslint-disable-next-line react/jsx-indent
+              }
+            }
           >
             {boxIcons.map(icon =>
               <div className='item' key={icon.id}>
@@ -43,3 +57,4 @@ export const IntroCarousel = () => {
     </>
   )
 }
+export const IntroCarousel = React.memo(IntroCarouselComponent)

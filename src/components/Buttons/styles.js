@@ -12,6 +12,9 @@ export const ButtonBlack = styled.button`
     border-color: #343a40;
     color: #fff;
   }
+  &[disabled] {
+    opacity: .5;
+  }
 `
 
 export const ButtonWhite = styled.button`
@@ -26,6 +29,9 @@ export const ButtonWhite = styled.button`
     border-color: #000000;
     color: #ffffff;
   }
+  &[disabled] {
+    opacity: .5;
+  }
 `
 
 export const ButtonGrey = styled.button`
@@ -39,6 +45,9 @@ export const ButtonGrey = styled.button`
     background-color: #343a40;
     border-color: #343a40;
     color: #fff;
+  }
+  &[disabled] {
+    opacity: .5;
   }
 `
 
@@ -58,4 +67,7 @@ export const ButtonClose = styled.button`
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: .5;
+  &[disabled] {
+    opacity: .5;
+  }
 `

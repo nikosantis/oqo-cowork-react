@@ -11,6 +11,17 @@ export const Section = styled.section`
   padding-top: 120px;
   padding-bottom: 120px;
   background-image: url(${props => props.img});
+  position: relative;
+`
+
+export const ImgOverlay = styled.div`
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
 `
 
 export const SeparatorViewGlobalStyles = createGlobalStyle`
@@ -35,5 +46,9 @@ export const SeparatorViewGlobalStyles = createGlobalStyle`
         text-align: left;
       `}
     }
+  }
+  .forOver {
+    position: relative;
+    z-index: 1;
   }
 `

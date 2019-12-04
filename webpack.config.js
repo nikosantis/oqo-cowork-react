@@ -1,12 +1,17 @@
 const webpack = require('webpack')
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
 
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
-  mode: 'production',
+  entry: './src/index.js',
+  mode: process.env.NODE_ENV,
   output: {
-    filename: 'app.bundle.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: isProd ? 'js/app-[hash].js' : 'js/app.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -52,7 +57,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            outputPath: 'assets/'
+            name: 'assets/[hash].[ext]'
           }
         }
       }

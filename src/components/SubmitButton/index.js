@@ -1,8 +1,8 @@
 import React from 'react'
 import { ButtonBlack } from '../Buttons/styles'
 
-export const SubmitButton = ({ children, onClick, className }) => {
+export const SubmitButton = ({ children, onClick, className, enable }) => {
   return (
-    <ButtonBlack onClick={onClick} className={className}>{children}</ButtonBlack>
+    <ButtonBlack disabled={enable} onClick={onClick} className={className}>{children}</ButtonBlack>
   )
 }
